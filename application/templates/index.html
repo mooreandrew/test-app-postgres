@@ -1,0 +1,20 @@
+
+Postgresql SQL freeformat box
+
+<form action="/" method="POST">
+  <textarea rows="10" cols="100" name="sql">{{sql}}</textarea>
+  <br>
+  <input type="submit">
+</form>
+<b>Last SQL Status:</b> {{ status }}
+<br><Br>
+Test SQL Statements:<br>
+<pre>
+  CREATE TABLE distributors (
+    did     integer,
+    name    varchar(40) UNIQUE
+);
+</pre>
+<pre>
+insert into distributors (did, name) values (1, 'fred')
+</pre>
