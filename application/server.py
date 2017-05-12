@@ -15,6 +15,7 @@ def index():
         try:
             sql = request.form['sql']
             db.session.execute(text(sql))
+            db.session.commit()
             status = 'Success'
         except:
 
